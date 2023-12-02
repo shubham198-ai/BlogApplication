@@ -1,0 +1,6 @@
+This project is demo on blog application in which user can comment on post.
+while fetching post ,user get its all information on which post he/she/commented.
+this application contain User(getalluser,getuserbyid,deleteuser,updateuser),Post(getallpost,createpostwithuserid,getpostwithuserid,getpostwithcategoryid,deletepost,updatepost)
+  Category(createcategory,update,delete,get)
+  tools-postman,swagger,sts,mysql
+    technology-java8,springboot,springsecurity(JWT TOKEN),MySql,RestApi,HibernateJPA

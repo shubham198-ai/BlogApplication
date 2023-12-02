@@ -1,0 +1,22 @@
+package com.blog.security;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.blog.exception.ResourceNotFoundException;
+import com.blog.model.User;
+import com.blog.repo.UserRepo;
+
+public class CustomUserDetailService implements UserDetailsService{
+@Autowired
+private UserRepo userRepo;
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		//find user by username
+		User user = this.userRepo.findByEmail(username).orElseThrow(()->new ResourceNotFoundException("user with username not found"+0));
+		return user;
+	}
+
+}

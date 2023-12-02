@@ -1,0 +1,71 @@
+package com.blog.serviceImpl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blog.exception.ResourceNotFoundException;
+import com.blog.model.Post;
+import com.blog.payload.PostDto;
+import com.blog.repo.PostRepo;
+import com.blog.service.PostService;
+@Service
+public class PostServiceImpl implements PostService {
+@Autowired
+private PostRepo postRepo;   
+@Autowired
+private ModelMapper modelMapper;
+	@Override
+	public PostDto createPost(PostDto postDto) {
+		Post post=this.postRepo.findById(postId).orElseThrow
+				(()-> new ResourceNotFoundException("post with postid not found:"+postId));
+	}
+
+	@Override
+	public PostDto updatePost(PostDto postDto, Integer postId) {
+		Post post=this.postRepo.findById(postId).orElseThrow
+		(()-> new ResourceNotFoundException("post with postid not found:"+postId));
+		post.setAddedDate(postDto.g);
+		this.postRepo.save(post);
+		return null;
+	}
+
+	@Override
+	public void deletePost(Integer postId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public PostDto getPostById(Integer postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<PostDto> getall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<PostDto> getPostByUser(Integer postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<PostDto> getPostByCategory(Integer categoryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<PostDto> searchPosts(String keyword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.blog.payload;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.blog.model.Category;
+import com.blog.model.Comment;
+import com.blog.model.User;
+
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@Getter
+@Setter
+public class PostDto {
+    private Integer postId;
+	private String title;
+	private String content;
+	private String imageName;
+	private Date addedDate;
+	
+	private CategoryDto category;
+	private List<CommentDto>comment=new ArrayList<>();
+	private UserDto user;
+}

@@ -1,0 +1,6 @@
+package com.blog.security;
+
+public class JwtRequest {
+	
+	private String email;
+	private String password;

@@ -1,0 +1,11 @@
+server.port=5050
+#database config
+spring.datasource.url=jdbc:mysql://localhost:3306/blog
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=Qwerty12345@
+spring.jpa.hibernate.ddl-auto=update
+#Image related configuration
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+project.image=images/

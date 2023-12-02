@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=BlogApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{UserService.java[UserService" modifiers="513" timestamp="1700912617471"/>
+    <typeInfo handle="=BlogApp/C:\/Tool\/sts\/sts-4.20.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.nio.file.attribute(UserPrincipal.class[UserPrincipal" modifiers="1537" timestamp="1700901662101"/>
+    <typeInfo handle="=BlogApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{CategoryService.java[CategoryService" modifiers="513" timestamp="1700997711279"/>
+    <typeInfo handle="=BlogApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{PostService.java[PostService" modifiers="513" timestamp="1701175990123"/>
+    <typeInfo handle="=BlogApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{FileService.java[FileService" modifiers="513" timestamp="1701252395872"/>
+    <typeInfo handle="=BlogApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blog.service{CommentService.java[CommentService" modifiers="513" timestamp="1701276689290"/>
+    <typeInfo handle="=BlogApp/C:\/Tool\/sts\/sts-4.20.1.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\/jre\/lib\/jrt-fs.jar`java.xml=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;org.w3c.dom(Comment.class[Comment" modifiers="1537" timestamp="1700901662101"/>
+</typeInfoHistroy>
